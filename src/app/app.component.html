@@ -1,0 +1,12 @@
+<h2>Parallel Request</h2>
+<div>
+  {{loadedCharacter | json}}
+
+  {{ loadedCharacter.name }}
+  <p>
+    Handling multiple requests with forkJoin.<br/>
+
+    Both the requests in parallel and merge the response into one array using ForkJoin. In this way we can request multiple response without having the need to wait for the response of the previous request to feed as dependency in case of a sequential request structure.
+  </p>
+</div>
+<p>&nbsp;</p>
